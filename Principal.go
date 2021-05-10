@@ -1,7 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"fmt" // Chama-se "Format", mas todo mundo pronuncia "Fâmiti"
 )
 
-func main() { fmt.Println("Hello, World!") }
+func main() {
+	fmt.Println("Hello, World!")
+}
