@@ -1,4 +1,4 @@
-# BMOCurso01
+# BMOCursoGo01
 
 Inclui o conteudo dos videos:
 
