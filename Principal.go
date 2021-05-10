@@ -4,9 +4,9 @@ import (
 	"fmt" // Chama-se "Format", mas todo mundo pronuncia "Fâmiti"
 )
 
-var y09 = "olá bom dia"
+var y09 = "olá bom dia" // Tem uma abrangencia "PackageLevelScope", ou seja é Global
 
-func main() {
+func main() { // Obs: '{}' == Escopo == Bloco
 	// aqui começa
 
 	//[Video 07]
@@ -52,5 +52,14 @@ func main() {
 	a09 = 10 < 10
 	fmt.Println(a09, "\n")
 
+	//[Video 10]
+	y10 := 10
+	qualquerCoisa10(y10)
+
 	// aqui termina
+}
+
+func qualquerCoisa10(x int) {
+	fmt.Println(y09)
+	fmt.Println(x)
 }
