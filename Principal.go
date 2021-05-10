@@ -4,6 +4,8 @@ import (
 	"fmt" // Chama-se "Format", mas todo mundo pronuncia "Fâmiti"
 )
 
+var y09 = "olá bom dia"
+
 func main() {
 	// aqui começa
 
@@ -25,6 +27,30 @@ func main() {
 	fmt.Println(x, y, z)
 
 	//[Video 09]
+	x = 10
+	y = "olá bom dia"
+
+	fmt.Println(x, y)
+	fmt.Printf("x: %v, %T\n", x, x)
+	fmt.Printf("y: %v, %T\n\n", y, y)
+
+	// Repare que, apesar do ':=' Ser apenas para declaração(sem ser atribuição), é possível contato que pelo -1 das variáveis esteja sendo declarada:
+	x, x09 := 20, 30
+	fmt.Printf("x: %v, %T\n", x, x)
+	fmt.Printf("x09: %v, %T\n", x09, x09)
+
+	//Não podemos usar keywords(Palavras reservadas) como Identificadores(variaveis,classes,pacotes,etc..):
+	//package := 10
+	//fmt.Printf(package)
+
+	z09 := 10 + 10
+	fmt.Println(z09, "\n")
+
+	//Expressões:
+	a09 := 10 == 10
+	fmt.Println(a09)
+	a09 = 10 < 10
+	fmt.Println(a09, "\n")
 
 	// aqui termina
 }
