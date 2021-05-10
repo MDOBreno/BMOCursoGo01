@@ -5,6 +5,7 @@ import (
 )
 
 var y09 = "olá bom dia" // Tem uma abrangencia "PackageLevelScope", ou seja é Global
+var y11 int
 
 func main() { // Obs: '{}' == Escopo == Bloco
 	// aqui começa
@@ -55,6 +56,14 @@ func main() { // Obs: '{}' == Escopo == Bloco
 	//[Video 10]
 	y10 := 10
 	qualquerCoisa10(y10)
+
+	//[Video 11]
+	// Tipos em Go são estaticos
+	var x11 int = 10 //Obs: Normalmente não se faz uma declaração 'var' dentro de um bloco,Porém farei apenas por didática
+	// x11 = 20.5 //Descomentar esta linha causa erro, pois na linha anterior declaramos o tipo como inteiro
+	fmt.Printf("%v, %T", x11, x11)
+
+	y11 = 11 // Obs: Quando declaramos algo globalmente(ou seja, "PackageLevelScope") sem valor, so poderemos atribuir algo dentro de um escopo
 
 	// aqui termina
 }
