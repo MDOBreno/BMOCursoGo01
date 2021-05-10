@@ -61,9 +61,33 @@ func main() { // Obs: '{}' == Escopo == Bloco
 	// Tipos em Go são estaticos
 	var x11 int = 10 //Obs: Normalmente não se faz uma declaração 'var' dentro de um bloco,Porém farei apenas por didática
 	// x11 = 20.5 //Descomentar esta linha causa erro, pois na linha anterior declaramos o tipo como inteiro
-	fmt.Printf("%v, %T", x11, x11)
+	fmt.Printf("%v, %T\n\n", x11, x11)
 
 	y11 = 11 // Obs: Quando declaramos algo globalmente(ou seja, "PackageLevelScope") sem valor, so poderemos atribuir algo dentro de um escopo
+
+	//[Video 12]
+	var x12 int
+	x12 = 10
+	fmt.Printf("%v, %T\n", x12, x12)
+	x12 = 20
+	fmt.Printf("%v, %T\n", x12, x12)
+
+	// O "ValorZero" das variaveis é o que ela 'armazenam' entre serem declaradas e inicializadas, e para cada tipo vale:
+	/*
+		int:                                                      0
+		float:                                                    0.0
+		booleans:                                                 false
+		strings:                                                  ""
+		ponteiros, funcoes, interfaces, slices, channels, maps:   nil
+	*/
+	var a12 int
+	var b12 float64
+	var c12 string
+	var d12 bool
+	fmt.Printf("%v, %T\n", a12, a12)
+	fmt.Printf("%v, %T\n", b12, b12)
+	fmt.Printf("%v, %T\n", c12, c12)
+	fmt.Printf("%v, %T\n", d12, d12)
 
 	// aqui termina
 }
