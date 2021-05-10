@@ -89,6 +89,22 @@ func main() { // Obs: '{}' == Escopo == Bloco
 	fmt.Printf("%v, %T\n", c12, c12)
 	fmt.Printf("%v, %T\n", d12, d12)
 
+	//[Video 13]
+	x13 := "oi bom dia\ncomo vai?\tespero que \"tudo bem\"."
+	fmt.Printf("%v, %T\n", x13, x13)
+	x13 = `oi bom dia
+como vai?	espero que "tudo bem".`
+	fmt.Printf("%v, %T\n", x13, x13)
+
+	k := "oi"
+	fmt.Print(k)   //Print sem adicionar uma nova linha no final ( \n )
+	fmt.Println(k) //Print adicionando uma nova linha no final ( \n )
+
+	l := "bom dia"
+	fmt.Println(l)
+
+	z13 := fmt.Sprint(k, " ", l)
+	fmt.Println(z13)
 	// aqui termina
 }
 
