@@ -105,6 +105,15 @@ como vai?	espero que "tudo bem".`
 
 	z13 := fmt.Sprint(k, " ", l)
 	fmt.Println(z13)
+
+	//[Video 14]
+	type hotdog int
+	var b14 hotdog = 10
+	fmt.Printf("%T %v\n", b14, b14)
+	x14 := 10
+	fmt.Printf("%T %v\n", x14, x14)
+	//b14 = x14 //Essa linha da erro, pois são tipos diferentes, e variaveis instanciadas com um certo tipo nunca mudam até sua "morte"
+
 	// aqui termina
 }
 
