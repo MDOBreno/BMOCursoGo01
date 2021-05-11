@@ -114,6 +114,10 @@ como vai?	espero que "tudo bem".`
 	fmt.Printf("%T %v\n", x14, x14)
 	//b14 = x14 //Essa linha da erro, pois são tipos diferentes, e variaveis instanciadas com um certo tipo nunca mudam até sua "morte"
 
+	//[Video 15]
+	x14 = int(b14)
+	fmt.Printf("%T %v\n", x14, x14)
+
 	// aqui termina
 }
 
